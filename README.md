@@ -22,7 +22,9 @@ docker run --name TomcatServerOrWhatever -d -p 8080:8080 your-login/your-new-ima
 
 If you want to expose also the mysql, do:
 
+```shell
 docker run --name TomcatServerOrWhatever -d -p 8080:8080 -p 3306:3306 your-login/your-new-image
+```
 
 Copy the WAR file representing your application to `/opt/apache-tomcat-8.0.50/webapps/` folder:
 
